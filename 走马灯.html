@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .wmzp{position: relative;margin: 200px auto;width: 300px;height: 200px;
+        transform-style:preserve-3d;
+        animation: zmddh 10s linear infinite;}
+        img{width: 300px;height: 200px;position: absolute;}
+        img:nth-child(1){transform: rotateY(0deg) translate3d(0px,0px,280px);}
+        img:nth-child(2){transform: rotateY(60deg) translate3d(0px,0px,280px);}
+        img:nth-child(3){transform: rotateY(120deg) translate3d(0px,0px,280px);}
+        img:nth-child(4){transform: rotateY(180deg) translate3d(0px,0px,280px);}
+        img:nth-child(5){transform: rotateY(240deg) translate3d(0px,0px,280px);}
+        img:nth-child(6){transform: rotateY(300deg) translate3d(0px,0px,280px);}
+        img:nth-child(7){transform: rotateX(0deg) translate3d(0px,0px,280px);}
+        img:nth-child(8){transform: rotateX(60deg) translate3d(0px,0px,280px);}
+        img:nth-child(9){transform: rotateX(120deg) translate3d(0px,0px,280px);}
+        img:nth-child(10){transform: rotateX(180deg) translate3d(0px,0px,280px);}
+        img:nth-child(11){transform: rotateX(240deg) translate3d(0px,0px,280px);}
+        img:nth-child(12){transform: rotateX(300deg) translate3d(0px,0px,280px);}
+        @keyframes zmddh {
+            from{transform: rotateX(0deg) rotateY(0deg);}
+            to{transform: rotateX(360deg) rotateY(360deg);}
+        }
+        @keyframes bj {
+            0%{background: url("img/bj1.jpg") no-repeat center;background-size: 1349px;height: 650px;}
+            50%{background: url("img/bj2.jpg") no-repeat center;background-size: 1349px;height: 650px;}
+            100%{background: url("img/bj3.jpg") no-repeat center;background-size: 1349px;height: 650px;}
+        }
+        .bg{animation: bj 20s linear infinite;width: 1349px;height: 650px;overflow: auto;background: url("img/bj3.jpg") no-repeat center;background-size: 1349px;height: 650px}
+        @font-face {
+            font-family: wangmin;
+            src: url("font/wm.ttf");
+        }
+        .dy1,.dy2{font-family: "wangmin";font-size: 30px; color:blueviolet;}
+        .dy1 a{color:deeppink;text-decoration: none;}
+        .dianji{position: absolute;
+            bottom: 50px;
+            left: 50px;}
+        @keyframes cdTurn {
+            0%{transform:rotate(0deg); }
+            50%{transform:rotate(180deg);border: 10px solid cyan}
+            100%{transform:rotate(360deg);border: 2px solid red}
+        }
+        .cd{
+            width: 198px;
+            height: 198px;
+            background: salmon url("img/cd.png") no-repeat scroll;
+            border: 2px solid red;
+            border-radius:50% ;
+            /*transition:3s linear 0.5s;*/
+            animation: cdTurn infinite linear 10s;
+            position: absolute;top:30px;left: 30px;
+        }
+        /*div:hover{  transform:rotate(360deg); border: 10px solid cyan}*/
+        audio{position: absolute;
+            top: 0px;left: 0px;}
+
+    </style>
+</head>
+<body>
+<div class="bg">
+<div class="wmzp">
+    <img src="img/1.png" alt=""/>
+    <img src="img/2.png" alt=""/>
+    <img src="img/3.jpg" alt=""/>
+    <img src="img/4.JPG" alt=""/>
+    <img src="img/5.jpg" alt=""/>
+    <img src="img/6.JPG" alt=""/>
+    <img src="img/7.jpg" alt=""/>
+    <img src="img/8.JPG" alt=""/>
+    <img src="img/9.JPG" alt=""/>
+    <img src="img/10.JPG" alt=""/>
+    <img src="img/11.jpg" alt=""/>
+    <img src="img/1.png" alt=""/>
+
+</div>
+    <div class="dianji">
+        <div class="dy1">
+            <p>王敏同志，还想要赠送月饼呢？</p>
+            <p>嘿嘿，逗你玩呢。来，笑一下。</p>
+            <p>对，就是每天要开心的笑一下。</p>
+                祝：中秋节开心！！！
+        </div>
+        <br/>
+        <br/>
+        <div class="dy2">
+            <a href="index.html">点击此处，再来一次</a>
+        </div>
+    </div>
+    <div class="cd">
+
+    </div>
+    <audio controls="controls"autoplay
+           style="display:block;" loop="loop">
+        <source src="serouce/张国荣%20-%20沉默是金.mp3">
+        <source src="serouce/茜拉%20-%20最长的电影%20(Live).mp3">
+        <source src="serouce/张杰%20-%20无情的情书%20(Live).mp3">
+    </audio>
+</div>
+</body>
+</html>

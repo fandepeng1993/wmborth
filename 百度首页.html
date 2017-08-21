@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /**{margin: 0;padding: 0;}*/
+        .wrap{width: 100%;
+            height: 630px;position: relative; }
+        .di1{width: 100%;height: 24px;}
+        .di1 ul{list-style: none;float: right;margin-right: 20px;}
+        .di1 ul li {float:left;margin-right: 16px;line-height: 24px;text-align: center;}
+        .di1 ul li:last-child{background-color: #3388ff;width: 70px;}
+        .gdcp{color: white;text-decoration: none;font-weight: normal;}
+         li a{font-size: 12px;color: black;font-weight: bold}
+         p a{font-weight: normal;}
+        .dl,.zz{font-weight: normal;}
+        .lj:hover{color: #3388ff;}
+        .zz:hover{color: #3388ff;}
+        .dl:hover{color: #3388ff;}
+        .di2{
+            width: 70px;height: 106px;position: absolute;
+            border: 1px solid #d1d1d1;
+            right: 94px;
+            top: 52px;
+        }
+        .di2{display:none ;}
+        .di2 p{margin: 0;padding: 0;text-align: center;height: 25%;}
+        .di2 p a{font-size:12px;text-decoration: none;color: black;line-height: 25%;}
+        .di1 ul li:nth-child(8):hover .di2{display: block;}
+        .clear1{clear: both;}
+        .di3{background: url("img/bd_logo1.png") no-repeat;width: 300px;height:150px;position: absolute;
+            background-size: 275px;
+            top:36px;left:521px;}
+        .di4 input{width: 536px;height: 32px;position: absolute;top:191px;left: 347px;margin: 0;padding: 0;font-size: 15px;font-family: "Microsoft YaHei";}
+        .di4 .bdyx{background: #3385ff;height: 36px;line-height: 36px;position: absolute;top:191px;left: 887px;width: 100px;text-align: center;}
+        .di4 .bdyx a{text-decoration: none;color: white;}
+        .xj1{position: absolute;
+            top: 200px;left: 856px;z-index:2;}
+        .xj2{position: absolute;
+            top: 200px;left: 856px;z-index:1;}
+        .di4 a:hover .xj1{z-index: 0;}
+        .di5{background: url("img/bdewm.png") no-repeat;width: 710px;height: 130px;position: absolute;
+        top:500px;
+        left: 340px;}
+        iframe{position: absolute;top:265px;left: 350px;}
+        audio{position: absolute;
+            top: 0px;left: 0px;}
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="di1">
+        <ul>
+            <li><a href="#"class="lj">糯米</a></li>
+            <li><a href="#"class="lj">新闻</a></li>
+            <li><a href="#"class="lj">hao123</a></li>
+            <li><a href="#"class="lj">地图</a></li>
+            <li><a href="#"class="lj">视频</a></li>
+            <li><a href="#"class="lj">贴吧</a></li>
+            <li><a href="#"class="dl">登录</a></li>
+            <li>
+                <a href="#"class="zz">设置</a>
+                <div class="di2">
+                    <p><a href="#">搜索设置</a></p>
+                    <p><a href="#">高级搜索</a></p>
+                    <p><a href="#">关闭预测</a></p>
+                    <p><a href="#">搜索历史</a></p>
+
+                </div>
+            </li>
+            <li><a href="#" class="gdcp">更多产品</a></li>
+        </ul>
+    </div>
+    <div class="clear1"></div>
+
+    <div class="di3"></div>
+    <div class="di4">
+        <form>
+            <input type="text" placeholder="请在这输入“王敏”，然后点击百度一下" list="carlist"/>
+            <datalist id="carlist">
+                <option value="王敏"></option>
+            </datalist>
+
+           <div class="bdyx"><a href="中秋快乐.html" target="if1">百度一下</a></div>
+            <a href="#"><img src="img/bdxj1.png" class="xj1"></a>
+            <a href="#"><img src="img/bdxj2.png" class="xj2"></a>
+
+        </form>
+    </div>
+    <div class="if">
+        <iframe src="" frameborder="0" width="530px" height="230px;" name="if1"></iframe>
+    </div>
+    <div class="di5"></div>
+    <audio controls="controls"autoplay
+           style="display:block;" loop="loop">
+        <source src="serouce/孙露%20-%20珍惜.mp3">
+        <source src="serouce/李茂山%20-%20迟来的爱.mp3">
+        <source src="serouce/孙子涵%20-%20唐人.mp3">
+    </audio>
+</div>
+</body>
+</html>

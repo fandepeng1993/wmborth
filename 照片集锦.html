@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .zp{width: 350px;height: 350px;position: relative;margin: 100px auto;transform-style: preserve-3d;animation: zpj 10s linear infinite;}
+        img{width: 350px;height: 350px;position: absolute;}
+        img:nth-child(1){transform:rotateY(90deg)translateZ(175px);}
+        img:nth-child(2){transform:rotateY(180deg)translateZ(175px);}
+        img:nth-child(3){transform:rotateY(270deg)translateZ(175px);}
+        img:nth-child(4){transform:rotateY(360deg)translateZ(175px);}
+        img:nth-child(5){transform:rotateX(90deg)translateZ(175px);}
+        img:nth-child(6){transform:rotateX(270deg)translateZ(175px);}
+        @keyframes zpj {
+            from{transform: rotateX(0deg) rotateY(0deg);}
+            to{transform: rotateX(360deg) rotateY(360deg);}
+        }
+        @keyframes bj {
+            0%{background: url("img/bj1.jpg") no-repeat center;background-size: 1349px;height: 650px;}
+            50%{background: url("img/bj2.jpg") no-repeat center;background-size: 1349px;height: 650px;}
+            100%{background: url("img/bj3.jpg") no-repeat center;background-size: 1349px;height: 650px;}
+        }
+        .bg{animation: bj 20s linear infinite;width: 1349px;height: 650px;overflow: auto;background: url("img/bj3.jpg") no-repeat center;background-size: 1349px;height: 650px}
+        @font-face {
+            font-family: wangmin;
+            src: url("font/wm.ttf");
+        }
+        .dy1,.dy2{font-family: "wangmin";font-size: 30px;}
+        .dy1 a{color:deeppink;text-decoration: none;}
+        .dianji{position: absolute;
+            top: 50px;
+            left: 50px;}
+        audio{position: absolute;
+            top: 0px;left: 0px;}
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="zp">
+        <img src="img/1.png" alt=""/>
+        <img src="img/7.jpg" alt=""/>
+        <img src="img/3.jpg" alt=""/>
+        <img src="img/4.JPG" alt=""/>
+        <img src="img/8.JPG" alt=""/>
+        <img src="img/9.JPG" alt=""/>
+        </div>
+        <div class="dianji">
+            <div class="dy1">
+                中秋佳节，健康快乐！
+            </div>
+            <br/>
+            <br/>
+            <div class="dy2">
+                <a href="走马灯.html">点击此处，赠送月饼</a>
+            </div>
+        </div>
+        <audio controls="controls"autoplay
+               style="display:block;" loop="loop">
+            <source src="serouce/逃跑计划%20-%20夜空中最亮的星.mp3">
+            <source src="serouce/李茂山%20-%20迟来的爱.mp3">
+            <source src="serouce/孙子涵%20-%20唐人.mp3">
+        </audio>
+
+    </div>
+
+</body>
+</html>
